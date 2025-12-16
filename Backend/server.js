@@ -7,12 +7,16 @@ import chatRoutes from "./Routes/chat.js"
 const app = express();
 const PORT = 8080;
 
-app.use(cors());
-app.use(express.json());
+ app.use(express.json());
 
 app.use('/api',chatRoutes); 
 // Every route inside chatRoutes will start with /api("/api/login")
 
+app.use(cors({
+  origin: "https://gem-op.vercel.app", // <-- your frontend URL
+  methods: ["GET", "POST", "DELETE"],
+  credentials: true
+}));
 app.listen(PORT, () => {
   console.log(`Server is running at ${PORT}`);
   connectDb();//calling the connectDb
