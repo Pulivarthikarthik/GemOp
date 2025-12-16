@@ -1,0 +1,231 @@
+/*
+.chatWindow{
+    background-color: #212121;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+navbar
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar span{
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.userIconDiv{
+    margin: 1rem 2rem;
+}
+
+.userIcon{
+    margin-right: 1.5rem;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    cursor: pointer;
+ }
+.Menu{
+    margin-left: 1.5rem;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    cursor: pointer;
+ 
+}
+
+chat Input
+
+.inputBox {
+  width: 100%;
+  position: relative;
+  width: 700px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0 54px 55px,
+    rgba(0, 0, 0, 0.05) 0 -12px 30px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px,
+    rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+input:focus { when we hover we are getting extra blue outline to remove that
+  outline: none;
+}
+
+#submit {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  position: absolute; /* here the parent should be relative and then the submit is absolute which takes the reference point
+   from the relative(parent) position and then moving right
+
+  right: 5px; Positions element from parent's right edge
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid #464d55 ;
+   border-radius: 20px;
+}
+/* #submit i:hover{
+    color:rgb(122, 192, 236);
+} 
+
+.info{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: #b4b4b4;
+} */
+ 
+
+.chatWindow {
+    background-color: #212121;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span {
+    margin: 1rem 2rem;
+}
+
+.userIconDiv {
+    margin: 1rem 2rem;
+}
+
+.userIcon {
+    background-color: #339cff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* chat input */
+.chatInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox {
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    font-size: 0.8rem;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+                rgba(0, 0, 0, 0.05) 0 -12px 30px,
+                rgba(0, 0, 0, 0.05) 0 4px 6px,
+                rgba(0, 0, 0, 0.05) 0 12px 3px,
+                rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit i:hover {
+    color:#ADD8E6;
+}
+
+.info {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: #b4b4b4;
+}
+
+/* dropdown css */
+
+.dropDown {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    width: 150px;
+
+    background-color: #323232;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropDownItem {
+    font-size: 0.9rem;
+    margin: 0.3rem 0rem;
+    padding: 0.5rem 0.2rem;
+    cursor: pointer;
+}
+
+
+.dropDownItem:hover {
+    background-color: rgba(180, 180, 180, 0.1);
+    border-radius: 6px;
+}
+
+
+
+ 
